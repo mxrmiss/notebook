@@ -1,4 +1,13 @@
-
+---
+title: DC_1靶机渗透测试 
+date: 2020-09-14 14:06
+swiper: false # 将改文章放入轮播图中
+swiperImg: '' # 该文章在轮播图中的图片，可以是本地目录下图片也可以是http://xxx图片
+img: 'http://cdn.mxrblog.cn/ct_3.jpg' # 该文章图片，可以是本地目录下图片也可以是http://xxx图片
+categories: 渗透测试
+tags: [渗透测试, DC]   # 可以是数组
+top: false
+---
 
 # DC_1靶机渗透测试
 
@@ -54,7 +63,7 @@ nmap -sP 192.168.0.0/24       //查询这个网段里面的活的IP
 
 ![image-20210619101204599](http://cdn.mxrblog.cn/image-20210619101204599.png)
 
-## 二、寻找漏洞
+## 三、寻找漏洞
 
 - 由于我们已经知晓网站的CMS是Drupal，于是我们可以使用msf探测Drupal的漏洞，并加以利用
 
@@ -70,7 +79,7 @@ nmap -sP 192.168.0.0/24       //查询这个网段里面的活的IP
 
 
 
-## 三、寻找flag
+## 四、寻找flag
 
 - 执行ls， 并且发现flag1
 
@@ -160,6 +169,15 @@ find / -perm -u=s -type f 2>/dev/null
 ![image-20210619120759548](http://cdn.mxrblog.cn/image-20210619120759548.png)
 
 
+
+## 五、总结
+
+- nmap使用
+- arp-scan -l
+- 通过CMS寻找漏洞
+- msf的使用
+- find发现root可执行文件
+- suid提权
 
 ## 知识点
 
