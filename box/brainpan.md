@@ -71,7 +71,7 @@ git clone https://github.com/jessekurrus/brainpan
 
 ![image-20210707042149055](http://cdn.mxrblog.cn/image-20210707042149055.png)
 
-- 使用mfs计算EIP的位置
+- 使用mfs计算EIP的偏移量
 
 ```
 /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 35724134
@@ -141,4 +141,6 @@ sudo /home/anansi/bin/anansi_util manual cat
 ![image-20210707085613225](http://cdn.mxrblog.cn/image-20210707085613225.png)
 
 ![image-20210707085713346](http://cdn.mxrblog.cn/image-20210707085713346.png)
+
+
 

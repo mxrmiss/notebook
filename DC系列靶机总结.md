@@ -123,3 +123,4 @@ wget http://xxxx_ip:xx_port/xxx_file
 ```
 
 - 注意查看靶机里面邮件内容可能有惊喜
+

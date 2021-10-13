@@ -39,3 +39,4 @@ trojan+XTLS，trojan加强版，使用XTLS技术提升性能
 - GitHub上搜索并且下载v2ray客户端，建议先下载windows版本进行链接测试，再下载Linux或其他版本
 - windows客户端下为图形化界面，点击左下方·的导入或者新建，进入新页面后按照要求填写即可（最好使用导入选项，将之前在服务器上保存的配置信息中的链接粘贴到里面即可），双击链接即可科学上网
 - Linux客户端建议直接使用终端下的客户端，进入GitHub下载相应版本后解压到合适的目录下，然后配置其中的config.json文件,可以将之前windows客户端的config.json导出，然后替换掉Linux客户端原有的那个文件，配置好之后记得把vpoint_vmess_feedom.json文件删除。最后一步需要到系统的网络设置下手动配置代理，socks和http代理的配置在config.json文件里面都有
+
