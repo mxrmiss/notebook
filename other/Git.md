@@ -66,7 +66,7 @@ fatal: 无法读取远程仓库。
 请确认您有正确的访问权限并且仓库存在。
 ```
 
-### git clonne
+### git clone
 
 1. fatal: unable to access ‘https://XXX: Failed onnect to github. com port 443: Timed out
 
