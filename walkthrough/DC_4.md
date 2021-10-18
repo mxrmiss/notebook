@@ -1,5 +1,4 @@
 ---
-
 title: DC_4靶机渗透测试 
 date: 2020-09-14 14:06
 swiper: false # 将改文章放入轮播图中
@@ -8,7 +7,6 @@ img: 'http://cdn.mxrblog.cn/ct_10.jpg' # 该文章图片，可以是本地目录
 categories: walkthrough
 tags: [渗透测试, DC]   # 可以是数组
 top: false
-
 ---
 
 # DC_4靶机渗透测试
