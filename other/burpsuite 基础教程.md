@@ -31,7 +31,7 @@ top: false
 
 
 
-4. 设置代理，并且在浏览器中设置代理与brupsuite保持一致
+4. 点击option设置代理，并且在浏览器中设置代理与brupsuite保持一致
 
 ![image-20210627193613322](http://cdn.mxrblog.cn/image-20210627193613322.png)
 
@@ -39,7 +39,7 @@ top: false
 
 ![1](http://cdn.mxrblog.cn/1.png)
 
-
+- 从浏览器中打开127.0.0.1:8080
 
 ![2](http://cdn.mxrblog.cn/2.png)
 
