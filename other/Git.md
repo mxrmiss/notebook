@@ -1,14 +1,3 @@
----
-title: Git&Github
-date: 2020-09-14 14:06
-swiper: false # 将改文章放入轮播图中
-swiperImg: '' # 该文章在轮播图中的图片，可以是本地目录下图片也可以是http://xxx图片
-img: 'http://cdn.mxrblog.cn/bing_3.jpg' # 该文章图片，可以是本地目录下图片也可以是http://xxx图片
-categories: git
-tags: [git,github]   # 可以是数组
-top: false
----
-
 - Git 初始化
 
   ```
@@ -23,8 +12,7 @@ top: false
   ```
   git config --global core.quotepath false
   ```
-  <!--more-->
-
+  
 - git 无法推送新文件到github仓库原因
 
   1. 可能仓库内已经有东西了，而且使用的推送命令不对
@@ -53,8 +41,6 @@ git add *
 git commit -m "内容描述"
 git push
 ```
-
-
 
 - 无法读取远程仓库
 

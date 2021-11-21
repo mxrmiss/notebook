@@ -1,26 +1,12 @@
----
-title: sqlmap
-date: 2021-6-26
-swiper: false # 将改文章放入轮播图中
-swiperImg: '' # 该文章在轮播图中的图片，可以是本地目录下图片也可以是http://xxx图片
-img: 'http://cdn.mxrblog.cn/gz_11.jpg' # 该文章图片，可以是本地目录下图片也可以是http://xxx图片
-categories: sql
-tags: [sql, sqlmap, 渗透工具]   # 可以是数组
-top: false
+# Sqlmap 基础
 
----
-
-## sqlmap basics
-
-#### continuously  updating ……
-
-- Format
+### Format
 
 ```
 sqlmap -u "required_url" parameter1, parameter2, parameter3 ...
 ```
 
-- Basic parameters
+### Basic parameters
 
 ```
 -dbs		//all databases
