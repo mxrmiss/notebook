@@ -1,6 +1,16 @@
+---
+title: windows安装hexo
+date: 2021-12-13 
+categories: blog
+tags: [blog, node.js]
+top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bing%E5%A3%81%E7%BA%B8/bing_3.jpg
+---
+
+
+
 # windows安装hexo
 
-## windows 安装node.js
+## 安装node.js
 
 ### 安装
 
