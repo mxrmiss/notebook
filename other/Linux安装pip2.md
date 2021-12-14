@@ -1,8 +1,9 @@
 ---
-title: Linux安装pip2
-date: 2020-09-14 14:06
+title: linux安装pip2
+date: 2021/12/14
 categories: linux
-tags: [linux, pip, python]
+tags: [linux, pip]
+top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bing%E5%A3%81%E7%BA%B8/bing_5.jpg
 ---
 
 
