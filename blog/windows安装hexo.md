@@ -43,7 +43,7 @@ npm install express
 npm info express
 ```
 
-![image-20211212141925797](C:/Users/herol/OneDrive/%E6%96%87%E6%A1%A3/GitHub/Figure_bed/main/image-20211212141925797.png)
+![image-20211212141925797](https://mxrblog.cn/main/image-20211212141925797.png)
 
 - 此时换源成功
 
