@@ -3,8 +3,8 @@ title: linux安装pip2
 date: 2021/12/14
 categories: linux
 tags: [linux, pip]
-top_img: https:/mxrblog.cn/bing/bing_5.jpg
-cover: https:/mxrblog.cn/bing/bing_5.jpg
+top_img: https://mxrblog.cn/bing/bing_5.jpg
+cover: https://mxrblog.cn/bing/bing_5.jpg
 ---
 
 
