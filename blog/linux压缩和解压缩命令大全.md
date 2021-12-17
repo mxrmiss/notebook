@@ -3,7 +3,8 @@ title: linux压缩和解压缩命令大全
 date: 2020-09-14 14:06
 categories: linux
 tags: [linux command]  
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bing%E5%A3%81%E7%BA%B8/bing_7.jpg
+top_img: https:/mxrblog.cn/bing/bing_2.jpg
+cover: https:/mxrblog.cn/bing/bing_2.jpg
 ---
 
 

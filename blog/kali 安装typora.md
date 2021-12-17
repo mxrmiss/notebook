@@ -3,7 +3,8 @@ title: kali 安装typora
 date: 2021/12/14
 categories: linux
 tags: [kali, linux, typora]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bing%E5%A3%81%E7%BA%B8/bing_6.jpg
+top_img: https:/mxrblog.cn/bing/bing_9.jpg
+cover: https:/mxrblog.cn/bing/bing_9.jpg
 ---
 
 ## kali 安装typora

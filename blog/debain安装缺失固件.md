@@ -3,7 +3,8 @@ title: Debain 安装缺失固件
 date: 2021/12/14
 categories: linux
 tags: [linux, debain]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bing%E5%A3%81%E7%BA%B8/bing_4.jpg
+top_img: https://mxrblog.cn/bing/bing_4.jpg
+cover: https://mxrblog.cn/bing/bing_4.jpg
 ---
 
 

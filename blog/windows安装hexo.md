@@ -3,7 +3,8 @@ title: windows安装hexo
 date: 2021-12-13 
 categories: blog
 tags: [blog, node.js]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bing%E5%A3%81%E7%BA%B8/bing_3.jpg
+top_img: https:/mxrblog.cn/bing/bing_3.jpg
+cover: https:/mxrblog.cn/bing/bing_3.jpg
 ---
 
 
