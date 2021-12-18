@@ -3,8 +3,8 @@ title: 安装zsh
 date: 2021/12/17
 categories: linux
 tags: [linux, shell]
-top_img: https://mxrblog.cn/bing/bing_7.jpg
-cover: https://mxrblog.cn/bing/bing_7.jpg
+top_img: https://mxrblog.cn/bg_pic/bing_7.jpg
+cover: https://mxrblog.cn/bg_pic/bing_7.jpg
 ---
 
 

@@ -3,8 +3,8 @@ title: powershell魔改
 date: 2021/12/18
 categories: windows
 tags: [windows, powershell, shell]
-top_img: https://mxrblog.cn/bing/bing_10.jpg
-cover: https://mxrblog.cn/bing/bing_10.jpg
+top_img: https://mxrblog.cn/bg_pic/bing_10.jpg
+cover: https://mxrblog.cn/bg_pic/bing_10.jpg
 ---
 
 

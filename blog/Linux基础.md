@@ -3,8 +3,8 @@ title: Linux基础操作
 date: 2020-09-14 14:06
 categories: linux
 tags: [linux, kali]  
-top_img: https://mxrblog.cn/bing/bing_6.jpg
-cover: https://mxrblog.cn/bing/bing_6.jpg
+top_img: https://mxrblog.cn/bg_pic/bing_6.jpg
+cover: https://mxrblog.cn/bg_pic/bing_6.jpg
 ---
 
 [本笔记的友情链接](https://book.apeland.cn/details/189/)
