@@ -1,16 +1,3 @@
----
-title: DC系列靶机总结
-date: 2021-10-14
-swiper: false # 将改文章放入轮播图中
-swiperImg: '/medias/1.jpg' # 该文章在轮播图中的图片，可以是本地目录下图片也可以是http://xxx图片
-img: 'http://cdn.mxrblog.cn/gz_1.jpg' # 该文章图片，可以是本地目录下图片也可以是http://xxx图片
-categories: 渗透测试
-tags: [渗透测试, 靶机, DC]
-top: false
----
-
-
-
 # DC系列靶机总结
 
 ## (一) 信息收集

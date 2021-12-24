@@ -23,7 +23,7 @@
 
 - 将载荷中的内容复制到脚本中, 替换图片中横线部分
 
-![1](https://mxrblog.cn/p/o/1.png)
+![1](https://herozql.oss-cn-beijing.aliyuncs.com/p/o/1.png)
 
 - 修改载荷中的IP地址和端口，然后将脚本的 LFIREQ 参数更改为我们在burpsuit中看到的参数。如：
 

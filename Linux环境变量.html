@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Linux环境变量</title>
+</head>
+<body><p>&nbsp;</p>
+<h2 id='1-环境变量的种类'>1. 环境变量的种类</h2>
+<ul>
+<li>全局环境变量</li>
+<li>局部环境变量</li>
+
+</ul>
+<h3 id='11-全局环境变量'>1.1 全局环境变量</h3>
+<ul>
+<li><p>全局环境变量对于所有的shell都适用（父shell与子shell）</p>
+</li>
+<li><p>全局环境变量可以使用命令<code>env</code>和<code>printenv</code>显示</p>
+<ul>
+<li>显示个别环境变量的值使用<code>printenv</code>命令，使用<code>env</code>命令会报错</li>
+
+</ul>
+<p><img src="https://mxrblog.cn/main/image-20211223202416786.png" referrerpolicy="no-referrer" alt="image-20211223202416786"></p>
+</li>
+
+</ul>
+<h3 id='12-局部环境变量'>1.2 局部环境变量</h3>
+<ul>
+<li>Linux中没有专门查看局部环境变量的命令，只有使用set命令才能查看包括局部环境变量的所有环境变量</li>
+
+</ul>
+<h2 id='2-设置自定义环境变量'>2. 设置自定义环境变量</h2>
+<h3 id='21-设置局部用户自身定义变量'>2.1 设置局部用户自身定义变量</h3>
+<ul>
+<li>局部环境变量小写，系统环境变量大写</li>
+<li>创建变量， 使用 $变量名 就能够引用环境变量</li>
+
+</ul>
+<p><img src="https://mxrblog.cn/main/image-20211223203630451.png" referrerpolicy="no-referrer" alt="image-20211223203630451"></p>
+<ul>
+<li>当创建的变量有空格的时候，创建变量时应该使用单引号来界定字符串的首和尾，没有单引号的话，bash shell会以为空格后下一个词是另一个要执行的命令</li>
+
+</ul>
+<p><img src="https://mxrblog.cn/main/image-20211223203950280.png" referrerpolicy="no-referrer" alt="image-20211223203950280"></p>
+<ul>
+<li>用户自定义设置的局部环境变量只能在当前shell下使用，在子shell与父shell中都不能使用</li>
+
+</ul>
+<h3 id='22-设置全局环境变量'>2.2 设置全局环境变量</h3>
+<ul>
+<li>设置全局环境变量的步骤只比设置局部环境变量多出了一步</li>
+<li>创建局部变量后可以使用 <code>export 变量名</code> 来将局部变量转化为全局环境变量</li>
+
+</ul>
+<p><img src="https://mxrblog.cn/main/image-20211223205545608.png" referrerpolicy="no-referrer" alt="image-20211223205545608"></p>
+<ul>
+<li>删除全局环境变量使用 <code>unset 变量名</code> 命令</li>
+<li><strong>注意：子shell中修改父shell创建的全局环境变量不会影响父shell，只会对当前子shell产生影响</strong></li>
+
+</ul>
+<h2 id='3-设置path环境变量'>3. 设置PATH环境变量</h2>
+<ul>
+<li>我们有时候自己创建了一个脚本，或者在网上下载了一个软件到本地使用，但是只能在当前目录下执行，我们想在所有的shell 以及其他地方中使用，这时候就应该将脚本所在目录的位置添加到PATH环境变量中.</li>
+<li>查看PATH环境变量：<code>echo $PATH</code></li>
+<li>Linux中通常有以下几个环境变量文件，我们需要合理地选择：</li>
+
+</ul>
+<pre><code>/etc/profile 
+/etc/bash.bashrc
+$HOME/.bash_profile 
+$HOME/.bashrc 
+$HOME/.bash_login 
+$HOME/.profile 
+</code></pre>
+<ul>
+<li>在上边列举的几个环境变量文件中，/etc/profile和/etc/bash.bashrc 文件是设置全局环境变量的，其余的都是用户级的环境变量文件</li>
+
+</ul>
+<h3 id='31-区别'>3.1 区别</h3>
+<ul>
+<li>在使用层次方面说，/etc/profile，/etc/bash.bashrc 文件都是为所有用户使用的，其他变量文件都是为单个用户使用的</li>
+<li>从文件关系来说，$HOME/.bash_login，$HOME/.bash_profile，$HOME/.profile 都是会查看引用 $HOME/.bashrc 的内容，而$HOME/.bashrc，/etc/profile 则会借鉴 /etc/bash.bashrc 的内容</li>
+
+</ul>
+<ul>
+<li>从执行方式来说，/etc/profile ，$HOME/.bash_profile，$HOME/.bash_login，$HOME/.profile 修改后，都是重启后才能生效的，而/etc/bash.bashrc，$HOME/.bashrc 被修改后重新打开一个执行窗口便能生效，不需要重启</li>
+<li>从读取顺序来讲，/etc/profile，/etc/bash.bashrc 重启后一定会被读取，而$HOME/.bash_profile，$HOME/.bash_login，$HOME/.profile 只要被读取一个就不会读取其他的</li>
+
+</ul>
+<h3 id='32-注意'>3.2 注意</h3>
+<ul>
+<li>各个操作系统包含的环境变量配置文件可能不一样，上述的配置文件只有部分会被使用</li>
+<li>在配置全局环境变量的时候，/etc/profile会读取/etc/profile.d文件夹中的内容，所以我们最好在/etc/profile.d文件夹中创建 <code>xxx.sh</code> 文件，在该文件中写上我们想配置的全局环境变量路径，这样做便于维护</li>
+
+</ul>
+<h3 id='33-在配置文件中写环境变量路径的方法'>3.3 在配置文件中写环境变量路径的方法</h3>
+<ul>
+<li>环境变量的名称为PATH，引用时使用 $PATH，每个环境变量使用  “ ：” 隔开，形如：</li>
+
+</ul>
+<pre><code>export PATH=&quot;$HOME/XXXdir:$PATH&quot;
+export PATH=&quot;$PATH:$HOME/XXXdir&quot;
+</code></pre>
+<p>&nbsp;</p>
+<p><em><strong>注：本文截图来自于：</strong></em></p>
+<p><img src="https://mxrblog.cn/main/image-20211223222825885.png" referrerpolicy="no-referrer" alt="image-20211223222825885"></p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -3,8 +3,8 @@ title: Debain 安装缺失固件
 date: 2021/12/14
 categories: linux
 tags: [linux, debain]
-top_img: https://mxrblog.cn/bg_pic/bing_4.jpg
-cover: https://mxrblog.cn/bg_pic/bing_4.jpg
+top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_4.jpg
+cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_4.jpg
 ---
 
 
@@ -57,13 +57,13 @@ cover: https://mxrblog.cn/bg_pic/bing_4.jpg
 - 安装完成后还是发现提示没有找到蓝牙适配器，通过google我们可以知道是缺少了相关的驱动，的确，在安装debain的时候就提示了缺少部分固件，需要从介质中读取
 - 进入固件压缩包下载页面：http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/
 
-![image-20211214182615129](https://mxrblog.cn/main/mainimage-20211214182615129.png)
+![image-20211214182615129](https://herozql.oss-cn-beijing.aliyuncs.com/main/mainimage-20211214182615129.png)
 
-![image-20211214183237845](https://mxrblog.cn/main/mainimage-20211214183237845.png)
+![image-20211214183237845](https://herozql.oss-cn-beijing.aliyuncs.com/main/mainimage-20211214183237845.png)
 
 - 解压
 
-![image-20211214183401637](https://mxrblog.cn/main/mainimage-20211214183401637.png)
+![image-20211214183401637](https://herozql.oss-cn-beijing.aliyuncs.com/main/mainimage-20211214183401637.png)
 
 - 我们缺失的是这个安装包 `firmware-atheros_20210818-1_all.deb`
 
