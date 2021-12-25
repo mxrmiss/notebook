@@ -5,8 +5,9 @@ categories: linux
 tags: [kali, linux, typora]
 top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_9.jpg
 cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_9.jpg
-
 ---
+
+
 
 ## kali 安装typora
 

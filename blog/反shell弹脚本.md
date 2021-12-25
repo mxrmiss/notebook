@@ -1,3 +1,14 @@
+---
+title: 反弹shell脚本
+date: 2021/12/12
+tags: [渗透测试, shell]
+categories: 渗透测试
+top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_11.jpg
+cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_11.jpg
+---
+
+
+
 # 反弹shell脚本
 
 一、反弹shell的各种姿势
