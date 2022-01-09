@@ -9,7 +9,7 @@ cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_26.jpg
 
 # 1. if then 语句
 
-- **if** + *命令1*，*<u>命令1</u>* 如果正确执行则执行 **then** 后面的*<u>命令集</u>*，**fi** 为结束语句，示例如下：
+- **if** + ***命令1***，***命令1*** 如果正确执行则执行 **then** 后面的***命令集***，**fi** 为结束语句，示例如下：
 
 ```
 if command
