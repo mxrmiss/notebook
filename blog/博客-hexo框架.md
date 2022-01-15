@@ -361,7 +361,7 @@ vim /etc/nginx/nginx.conf
 >
 >- 在http项中添加 `rewrite ^(.*)$ https://$host$1 permanent;`
 
-![image-20220115094852682](C:/Users/herol/OneDrive/Document/GitHub/Figure_bed/main/image-20220115094852682.png)
+![image-20220115094852682](https://herozql.oss-cn-beijing.aliyuncs.com/main/image-20220115094852682.png)
 
 - 以下是我的nginx配置文件
 
