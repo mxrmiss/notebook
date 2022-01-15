@@ -1,3 +1,14 @@
+---
+title: burpsuite记录
+date: 2022/1/14
+categories: 渗透测试
+tags: [渗透测试, tool]
+top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_37.jpg
+cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_37.jpg
+---
+
+
+
 # 1. CA证书(开启https)
 
 - 浏览器打开网址：http://burp，点击右侧的证书按钮开始下载

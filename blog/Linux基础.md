@@ -2,7 +2,7 @@
 title: Linux基础操作
 date: 2020-09-14 14:06
 categories: linux
-tags: [linux, kali]  
+tags: linux
 top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_6.jpg
 cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_6.jpg
 ---
