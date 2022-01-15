@@ -22,6 +22,8 @@ cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
 # hexo.sh 的作用是发布博客
 # 该脚本位于/etc/cron.daily目录，作用是每天更新博客,每周末清除日志内容，包括错误和正确的日志
 
+echo "loading..."
+
 if [ $(date +%u) -eq 7 ]
 then
     echo "" > /root/story/blog_daily.log
@@ -32,6 +34,7 @@ exec 2>>/root/story/blog_daily_error.log
 echo "=============****错误日志****===============" >&2 
 date >&2; echo "" >&2
 
+exec 3>&1
 exec 1>>/root/story/blog_daily.log
 echo "=============*****运行日志*****================"
 date;echo ""
@@ -41,6 +44,9 @@ git pull
 cd /root/story/blog
 hexo clean
 hexo g -d
+
+exec 1>&3
+echo "loaded successfully!"
 ```
 
  
