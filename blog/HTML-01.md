@@ -103,7 +103,7 @@ cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_28.jpg
 
 # 4. 标题
 
-- 通过 <h1> - <h6> 标签进行定义的。示例如下：
+- 通过 \<h1> -\<h6> 标签进行定义的。示例如下：
 
 ```html
 <h1>这是一个标题。</h1>
