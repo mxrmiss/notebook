@@ -228,9 +228,32 @@ npm install hexo-generator-search --save
 >
 > ```css
 > search:
->   path: search.xml
->   field: post  //将post改为all即为搜索全部页面
+> path: search.xml
+> field: post  //将post改为all即为搜索全部页面
 > ```
+
+- 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失
+
+```
+npm i hexo-filter-nofollow --save
+```
+
+- 安装seo优化插件
+
+```bash
+// sitemap.xml适合提交给谷歌搜素引擎
+npm install hexo-generator-sitemap --save 
+// aidusitemap.xml适合提交百度搜索引擎
+npm install hexo-generator-baidu-sitemap --save 
+```
+
+- 中文链接转拼音
+
+```
+npm i hexo-permalink-pinyin --save
+```
+
+
 
 ##### 文章设置
 
@@ -735,8 +758,10 @@ error:spawn failed...
 
 ##  4. 相关链接(有用)
 
-|                                                              |                                                              |
+| 名称                                                         | 网址                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Waline评论](https://waline.js.org/)                         | https://waline.js.org                                        |
+|                                                              |                                                              |
 | [Hexo官网](https://hexo.io/zh-cn/index.html)                 | [hexo-theme-ayer:  gitee](https://gitee.com/shen-yu/hexo-theme-ayer) |
 | [Hexo文档](https://hexo.io/zh-cn/docs/)                      | [hexo-theme-bamboo: gitee](https://gitee.com/yuang01/hexo-theme-bamboo) |
 | [Hexo主题](https://hexo.io/themes/)                          | [hexo-theme-fluid: gitee](https://gitee.com/mxrmiss/hexo-theme-fluid) |
@@ -745,6 +770,7 @@ error:spawn failed...
 | [博客园，CSDN等平台利用Github绑定域名](https://social.blog.csdn.net/article/details/121484520) | [hexo-theme-bamboo: github](https://github.com/yuang01/hexo-theme-bamboo) |
 | [typora+阿里云图床+印象笔记+OneDrive](https://blog.csdn.net/missmxr/article/details/121443438?spm=1001.2014.3001.5501) | [hexo-theme-fluid: github](https://github.com/fluid-dev/hexo-theme-fluid) |
 | [图标网站：Font Awesome](https://fontawesome.com/)           | [hexo-theme-butterfly:github](https://github.com/jerryc127/hexo-theme-butterfly) |
+|                                                              |                                                              |
 
 
 
