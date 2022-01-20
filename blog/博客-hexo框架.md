@@ -253,8 +253,6 @@ npm install hexo-generator-baidu-sitemap --save
 npm i hexo-permalink-pinyin --save
 ```
 
-
-
 ##### 文章设置
 
 | 写法                    | 解释                                                         |
