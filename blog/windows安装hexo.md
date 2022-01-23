@@ -7,8 +7,6 @@ top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_3.jpg
 cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_3.jpg
 ---
 
-
-
 # windows安装hexo
 
 ## 安装node.js
