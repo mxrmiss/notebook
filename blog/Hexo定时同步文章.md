@@ -2,7 +2,7 @@
 title: Hexo定时同步文章
 date: 2022/1/13
 categories: blog
-tags: [linux, blog]
+tags: [linux, blog, script]
 top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
 cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
 ---
