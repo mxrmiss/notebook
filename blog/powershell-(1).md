@@ -7,13 +7,7 @@ top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_38.jpg
 cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_38.jpg
 ---
 
-# *参考资料
 
->对于powershell的学习，我是参考《Windows powershell 实战指南第三版》，书中共有28章节，我将拆分为4x7进行学习，每次学习4章节，总共学习7次。
-
-![image-20220122123100635](https://herozql.oss-cn-beijing.aliyuncs.com/main/image-20220122123100635.png)
-
->powershell 适用于windows，mac以及Linux，但是相对于bash shell而言，powershell显得相对复杂了一点，powershell最先源于windows系统，后来开源后才发布了mac以及Linux版本，但毕竟源于Windows，运行在其他系统上在我看来不尽人意。
 
 # 1. 查看powershell版本
 
@@ -251,4 +245,73 @@ Help Get-EventLog -example
 Help Get-EventLog -online
 ```
 
-  
+  # 4. 运行命令
+
+## 4.1 命令结构
+
+![image-20220123134636667](https://herozql.oss-cn-beijing.aliyuncs.com/main/image-20220123134636667.png)
+
+## 4.2 使用别名
+
+- 案例如下：
+
+```powershell
+PS C:\Users\herol> Get-Alias -Definition Get-Alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           gal -> Get-Alias
+
+
+PS C:\Users\herol> gal -def Get-Alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           gal -> Get-Alias
+
+
+PS C:\Users\herol>
+```
+
+- 即使命令使用了别名，参数依旧还需要输入，不过可以输入参数的不完全体，这也是很方便的 
+
+- 命令的参数有些也有别名，不过需要我们自己去查看，有时候输入一些字符按下tab键后会出现参数的别名，但是我们可能不知道，命令行也并不会提示我们，在我看来参数的别名并不重要，等到用到的时候再记录，**书上40页有记录**
+
+## 4.3 show-command
+
+- `show-command` 可以很清晰的让我们知道命令有哪些选项，<u>当完成后可以单击运行，也可以点击复制将完成后的命令复制到剪切板。</u>`show-command` 必须是可以运行GUI的机器上才能够执行
+
+![image-20220123141305249](https://herozql.oss-cn-beijing.aliyuncs.com/main/image-20220123141305249.png)
+
+## 4.4 对拓展命令的支持
+
+- powershell可以使用许多拓展命令，这些命令可能不属于powershell，典型的比如 `cmd.exe` 中的 `ipconfig`，当然也有许多外部命令是它不支持的。
+
+- 如果想使用一些powershell本身不支持的外部命令可以在外部命令名称之后加两个破折号和一个百分号，powershell不会解析该命令，仅仅会将该命令传递到`cmd.exe`中，如下所示：
+
+```powershell
+PS C:\Users\herol> C:\windows\system32\sc.exe --% qc bits
+[SC] QueryServiceConfig 成功
+
+SERVICE_NAME: bits
+        TYPE               : 20  WIN32_SHARE_PROCESS
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\System32\svchost.exe -k netsvcs -p
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : Background Intelligent Transfer Service
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+PS C:\Users\herol>
+```
+
+- 书上44页还给出了另一种使用外部命令的方法，比较麻烦所以不再多说
+
+# *参考资料
+
+>对于powershell的学习，我是参考《Windows powershell 实战指南第三版》，书中共有28章节，我将拆分为4x7进行学习，每次学习4章节，总共学习7次。
+
+![image-20220122123100635](../../Figure_bed/image-20220122123100635-16429168492141.png)
+
+>powershell 适用于windows，mac以及Linux，但是相对于bash shell而言，powershell显得相对复杂了一点，powershell最先源于windows系统，后来开源后才发布了mac以及Linux版本，但毕竟源于Windows，运行在其他系统上在我看来不尽人意。
