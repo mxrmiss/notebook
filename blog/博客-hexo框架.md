@@ -592,7 +592,7 @@ git config --global core.quotepath false
 - 创建ssh密匙
 
 ```
-ssh-keygen -t rsa -C "GitHub 邮箱"
+ssh-keygen -t rsa -C "heroli520@outlook.com"
 ```
 
 - 输出 id_rsa.pub 内容并复制到GitHub中的setting页面上
