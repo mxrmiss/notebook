@@ -312,6 +312,6 @@ PS C:\Users\herol>
 
 >对于powershell的学习，我是参考《Windows powershell 实战指南第三版》，书中共有28章节，我将拆分为4x7进行学习，每次学习4章节，总共学习7次。
 
-![image-20220122123100635](../../Figure_bed/image-20220122123100635-16429168492141.png)
+![image-20220122123100635](https://herozql.oss-cn-beijing.aliyuncs.com/main/image-20220122123100635-16429168492141.png)
 
 >powershell 适用于windows，mac以及Linux，但是相对于bash shell而言，powershell显得相对复杂了一点，powershell最先源于windows系统，后来开源后才发布了mac以及Linux版本，但毕竟源于Windows，运行在其他系统上在我看来不尽人意。

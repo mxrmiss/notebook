@@ -7,6 +7,14 @@ top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_41.jpg
 cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_41.jpg
 ---
 
+
+
+
+
+
+
+- 脚本如下：
+
 ```python
 """
 1）这个脚本的用处是批量修改文件的名称，如果存在已经修改过的名字的文件(加过前缀)就会跳过
