@@ -218,6 +218,12 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 npm install hexo-wordcount --save
 ```
 
+- RSS订阅
+
+```
+npm install hexo-generator-feed --save
+```
+
 - 全局搜索
 
 ```
