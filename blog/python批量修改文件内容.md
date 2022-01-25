@@ -1,5 +1,5 @@
 ---
-title: python批量修改文件名
+title: python批量修改文件内容
 date: 2022/1/25
 categories: python
 tags: [python, script]
