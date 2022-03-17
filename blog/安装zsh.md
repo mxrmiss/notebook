@@ -9,7 +9,7 @@ cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_7.jpg
 
 
 
-## 安装zsh
+## 1. 安装zsh
 
 - Shell是在程序员与服务器间建立一个桥梁，它对外提供一系列命令，让我们得以控制服务器。常用的Bash就是Shell的一种，也是Linux下默认Shell程序。
 
@@ -36,17 +36,8 @@ sudo apt install zsh
 ```
 
 
-## 安装oh-my-zsh
 
-- Zsh虽然好用，但直接用起来比较麻烦，但是已经有大神配置好的框架：[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)，专门为Zsh打造的
-
-```shell
-sudo apt install git
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-// 国内下载速度缓慢，建议将上面文件所在的仓库克隆到国内的Gitee中下载
-```
-
-## 切换为zsh
+## 2. 切换为zsh
 
 - 查看zsh的位置
 
@@ -67,30 +58,11 @@ chsh -s /usr/bin/zsh    //根据自己的zsh所在地址进行切换
 chsh -s /bin/bash
 ```
 
-## 配置主题
 
-- 方式一
 
->oh-my-zsh自带100多个主题，主题的配置文件在 ~/.zshrc文件中，找到这一行：
->
->```
->ZSH_THEME="robbyrussell"
->```
->
->你可以将值改成任意主题，oh-my-zsh的主题可以在[这里](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)找到。保存好文件后，执行 source ~/.zshrc 使配置生效。如果你将值设为空，表示不使用任何主题；你也可以设置为"random"，你每次打开都会随机选择一个主题。
->
->推荐主题： agnoster
->
->由于这个主题使用了一些特殊字符，需要安装字体：
->
->```
->sudo apt-get install fonts-powerline
->```
+## 3. 安装oh-my-zsh
 
-- 方式二
-
->在搜索 zsh 资料的同时, 也间接看到了oh-my-zsh, 查看 git, 被安利了一波, 据说用它, 可以配制出非常完美的 zsh, 故, 下载, 安装, 使用
->
+- Zsh虽然好用，但直接用起来比较麻烦，但是已经有大神配置好的框架：[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)，专门为Zsh打造的
 >```
 >$ cd ~
 >$ mkdir .oh-my-zsh
@@ -102,7 +74,24 @@ chsh -s /bin/bash
 >
 >眼前一亮, 感觉世界充满了颜色
 
-## 安装插件
+
+
+## 4. 配置主题
+
+
+>oh-my-zsh自带100多个主题，主题的配置文件在 ~/.zshrc文件中，找到这一行：
+>
+>```
+>ZSH_THEME="robbyrussell"
+>```
+>
+>你可以将值改成任意主题，oh-my-zsh的主题可以在[这里](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)找到。保存好文件后，执行 source ~/.zshrc 使配置生效。如果你将值设为空，表示不使用任何主题；你也可以设置为"random"，你每次打开都会随机选择一个主题。
+>
+>推荐主题： bira
+>
+
+
+## 5. 安装插件
 
 - 安装插件(安装需要的就可以了)
 
