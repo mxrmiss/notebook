@@ -39,7 +39,7 @@ sudo apt install libcanberra-gtk-module
 
   ## 3. Picgo配置文件(aliyun)
 
-```
+```json
 {
   "picBed": { // 图床的配置
     "uploader": "aliyun", // 图床类型的选择，这里选择阿里云
