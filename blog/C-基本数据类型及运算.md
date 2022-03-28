@@ -9,8 +9,6 @@ cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_48.jpg
 
 
 
-# 
-
 ## 1. 标识符与关键字
 - 标识符必须由字母和下划线开头
 - 规定32个关键字不能再用作各种标识符；12个标识符作为编译预处理的命令单词，使用时前面应加上 ‘#’
