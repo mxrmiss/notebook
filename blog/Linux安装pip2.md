@@ -3,8 +3,8 @@ title: linux安装pip2
 date: 2021/12/14
 categories: linux
 tags: [linux, python]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_5.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_5.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_5.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_5.jpg
 ---
 
 

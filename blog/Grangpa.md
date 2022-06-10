@@ -3,8 +3,8 @@ title: Hackthebox::Grandpa walkthrough
 date: 2021/12/14
 categories: 渗透测试
 tags: [渗透测试,walkthrough]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_22.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_22.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_22.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_22.jpg
 ---
 
 - **Grandpa是hackthebox上一台难度为简单的windows靶机**

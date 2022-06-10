@@ -3,8 +3,8 @@ title: Linux shell(6)-控制脚本
 date: 2022/1/13
 categories: linux
 tags: [linux, shell]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_33.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_33.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_33.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_33.jpg
 ---
 
 # 1. 处理信号

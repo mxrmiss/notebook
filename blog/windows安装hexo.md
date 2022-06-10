@@ -3,8 +3,8 @@ title: windows安装hexo
 date: 2021-12-13 
 categories: blog
 tags: [blog, hexo]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_3.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_3.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_3.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_3.jpg
 ---
 
 # windows安装hexo

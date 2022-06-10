@@ -3,8 +3,8 @@ title: Hexo定时同步文章
 date: 2022/1/13
 categories: blog
 tags: [linux, blog, script]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_34.jpg
 ---
 
 - 使用hexo 搭建博客有许多好处，但是也有许多麻烦，不过可以一一解决，接下来分享一下我的hexo博客自动化定时同步脚本

@@ -3,8 +3,8 @@ title: python正则表达式
 date: 2022/1/12
 categories: python
 tags: [python, 正则]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_31.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_31.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_31.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_31.jpg
 ---
 
 # 1. re 模块

@@ -3,8 +3,8 @@ title: python可迭代对象、迭代器和生成器
 date: 2022/1/22
 categories: python
 tags: python
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_40.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_40.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_40.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_40.jpg
 ---
 
 # 1. 迭代器与生成器的区别

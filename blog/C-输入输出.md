@@ -3,8 +3,8 @@ title: C-输入输出
 date: 2022/3/17
 categories: C
 tags: C
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_49.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_49.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_49.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_49.jpg
 ---
 
 

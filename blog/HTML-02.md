@@ -3,8 +3,8 @@ title: HTML-day02
 date: 2022/1/11
 categories: HTML
 tags: HTML
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_30.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_30.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_30.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_30.jpg
 ---
 
 

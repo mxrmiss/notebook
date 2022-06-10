@@ -3,8 +3,8 @@ title: curl 命令详解
 date: 2022/1/13
 categories: linux
 tags: [linux, tool]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_36.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_36.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_36.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_36.jpg
 ---
 
 

@@ -3,8 +3,8 @@ title: Linux shell(3)-循环
 date: 2022/1/8
 categories: linux
 tags: [linux, shell]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_27.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_27.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_27.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_27.jpg
 ---
 
 # 1. for 命令

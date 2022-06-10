@@ -3,8 +3,8 @@ title: Apache Tomcat 漏洞利用
 date: 2021/12/12
 tags: [渗透测试,漏洞利用]
 categories: 渗透测试
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_16.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_16.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_16.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_16.jpg
 ---
 
 

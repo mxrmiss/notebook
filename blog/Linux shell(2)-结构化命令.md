@@ -4,8 +4,8 @@ title: Linux shell(2)-结构化命令
 date: 2022/1/7
 categories: linux
 tags: [linux, shell]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_26.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_26.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_26.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_26.jpg
 ---
 
 # 1. if then 语句

@@ -3,8 +3,8 @@ title: Linux shell(7)-函数
 date: 2022/1/29
 categories: linux
 tags: [linux, shell]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_43.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_43.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_43.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_43.jpg
 ---
 
 # 1. 创建函数

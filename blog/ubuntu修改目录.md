@@ -3,8 +3,8 @@ title: ubuntu修改目录
 date: 2022/3/17
 categories: linux
 tags: [linux, ubuntu]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_46.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_46.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_46.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_46.jpg
 ---
 
 

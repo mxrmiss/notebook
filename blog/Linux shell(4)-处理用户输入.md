@@ -3,8 +3,8 @@ title: Linux shell(4)-处理用户输入
 date: 2022/1/9
 categories: linux
 tags: [linux, shell]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_29.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_29.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_29.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_29.jpg
 ---
 
 # 1. 命令行参数

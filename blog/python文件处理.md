@@ -3,8 +3,8 @@ title: python文件处理
 date: 2022/1/22
 categories: python
 tags: python
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_39.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_39.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_39.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_39.jpg
 ---
 
 # 1. 读与写

@@ -3,8 +3,8 @@ title: linux安装Vmware Workstation
 date: 2022/5/5
 categories: linux
 tags: [linux, ubuntu]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_58.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_58.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_58.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_58.jpg
 ---
 
 

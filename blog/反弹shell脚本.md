@@ -3,8 +3,8 @@ title: 反弹shell脚本
 date: 2021/12/12
 tags: [渗透测试, shell]
 categories: 渗透测试
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_11.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_11.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_11.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_11.jpg
 ---
 
 

@@ -3,8 +3,8 @@ title: python批量修改文件内容
 date: 2022/1/25
 categories: python
 tags: [python, script]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_42.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_42.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_42.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_42.jpg
 ---
 
 - 脚本如下：

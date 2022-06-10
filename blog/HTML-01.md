@@ -3,8 +3,8 @@ title: HTML-day01
 date: 2022/1/8
 categories: HTML
 tags: HTML
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_28.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_28.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_28.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_28.jpg
 ---
 
 # 声明：笔记摘自[菜鸟教程(https://www.runoob.com/)](https://www.runoob.com/)

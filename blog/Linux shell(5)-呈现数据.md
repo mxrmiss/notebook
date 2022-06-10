@@ -3,8 +3,8 @@ title: Linux shell(5)-呈现数据
 date: 2022/1/12
 categories: linux
 tags: [linux, shell]
-top_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_32.jpg
-cover: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_32.jpg
+index_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_32.jpg
+banner_img: https://herozql.oss-cn-beijing.aliyuncs.com/bg_pic/bing_32.jpg
 ---
 
 # 1. 理解输入输出
